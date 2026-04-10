@@ -1,0 +1,3 @@
+flet
+python-dotenv
+# sqlite3 ya viene incluido en Python, no es necesario instalarlo por pip.
