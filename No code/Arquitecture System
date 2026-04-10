@@ -1,0 +1,57 @@
+├── main.py                  #  Punto de entrada (Flet UI + inicialización)
+├── requirements.txt         #  Dependencias del proyecto (flet, etc.)
+├── README.md                #  Documentación general
+│
+├── database/                #  Capa de base de datos
+│   ├── _init_.py
+│   ├── connection.py        #  Conexión a SQLite
+│   └── schema.sql           #  Definición de tablas (DDL)
+│
+├── models/                  #  Modelos de datos (clases)
+│   ├── _init_.py
+│   ├── member.py            #  Miembro
+│   ├── plan.py              #  Plan
+│   ├── membership.py        #  Membresía
+│   ├── payment.py           #  Pago
+│   └── access_log.py        #  Acceso
+│
+├── services/                #  Lógica de negocio
+│   ├── _init_.py
+│   ├── member_service.py
+│   ├── plan_service.py
+│   ├── membership_service.py
+│   ├── payment_service.py
+│   └── access_service.py
+│
+├── views/                   #  Interfaces (Flet UI)
+│   ├── _init_.py
+│   ├── dashboard.py         #  Vista principal
+│   ├── members_view.py      #  Gestión de miembros
+│   ├── plans_view.py        #  Planes
+│   ├── payments_view.py     #  Pagos
+│   └── access_view.py       #  Control de acceso
+│
+├── components/              #  Componentes reutilizables
+│   ├── _init_.py
+│   ├── sidebar.py           #  Navegación lateral
+│   ├── table.py             #  Tablas
+│   └── forms.py             #  Formularios
+│
+├── utils/                   #  Utilidades
+│   ├── _init_.py
+│   ├── validators.py        #  Validaciones
+│   └── helpers.py           # Funciones auxiliares
+│
+├── config/                  #  Configuración del sistema
+│   ├── _init_.py
+│   └── settings.py          #  Variables globales (DB, app, etc.)
+│
+├── tests/                   #  Pruebas
+│   ├── _init_.py
+│   └── test_members.py
+│
+├── docs/                    #  Documentación técnica
+│   └── architecture.md
+│
+└── assets/                  #  Recursos estáticos
+    ├── logo.png
