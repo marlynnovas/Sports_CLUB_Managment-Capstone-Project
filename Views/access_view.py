@@ -4,7 +4,7 @@ from services.access_service import AccessService
 
 def AccessLogView(page: ft.Page):
 
-    # ── stat cards ───────────────────────────────────────────────────────
+    
     def mini_stat(title, val, clr):
         return ft.Container(
             content=ft.Column([

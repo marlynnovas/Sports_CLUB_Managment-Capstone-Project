@@ -8,7 +8,7 @@ from datetime import date, timedelta
 
 def DashboardView(page: ft.Page):
 
-    # ── helpers ─────────────────────────────────────────────────────────
+  
     def stat_card(title, value, subtitle, icon, color):
         return ft.Container(
             content=ft.Column([
@@ -53,8 +53,7 @@ def DashboardView(page: ft.Page):
     page.overlay.append(new_member_dialog)
 
     # RECORD PAYMENT DIALOG
-    membership_dropdown = ft.Dropdown(label="Select Membership", options=[])
-    payment_amount = ft.TextField(label="Amount ($)", keyboard_type=ft.KeyboardType.NUMBER)
+    
 
     def load_ms_options(e=None):
         ms_list = MembershipService.get_all_memberships()
